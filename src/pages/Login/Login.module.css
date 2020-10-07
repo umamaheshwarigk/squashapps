@@ -1,0 +1,57 @@
+.loginWrapper{
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+.rightWrapper{
+    width: 41%;
+    float: right;
+}
+.headText{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 40px;
+    width: 274px;
+    display: flex;
+}
+.subText{
+    height: 32px;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 32px;
+color: rgba(24, 50, 71, 0.7);
+display: block;
+margin: 5px 0 30px 0;
+
+}
+.button{
+margin: 40px 0 0 0;
+    
+    width: 140px;
+    height: 38px;
+    background: #3BC163;
+    border-radius: 2px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}
+.label{
+    
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+/* identical to box height */
+margin: 40px 0 0 0;
+
+color: #A1A6A9;
+}

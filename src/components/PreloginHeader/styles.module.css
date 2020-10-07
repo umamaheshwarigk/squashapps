@@ -1,0 +1,31 @@
+.headerWrapper{
+    height: 50px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 4px rgba(229, 229, 229, 0.5);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.headText{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+margin-left: 40px;
+color: #3BC163;
+
+}
+.rightContent{
+    position: absolute;
+    right: 30px;
+    width: 236px;
+    display: flex;
+    justify-content: space-between;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 18px;
+letter-spacing: 0.361111px;
+}
