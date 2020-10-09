@@ -1,0 +1,12 @@
+.ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #3BC163 !important;
+    margin: 8px;
+    width: 90%;
+}
+.ant-menu.ant-menu-dark, .ant-menu-dark .ant-menu-sub, .ant-menu.ant-menu-dark .ant-menu-sub {
+    color: rgba(255, 255, 255, 0.65);
+    background: transparent !important;
+}
+#root{
+    height: 100%;
+}

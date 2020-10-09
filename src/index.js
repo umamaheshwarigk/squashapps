@@ -6,11 +6,19 @@ import {BrowserRouter as Router, Route, Redirect} from "react-router-dom"
 import Login from './pages/Login';
 import Dashboard from './pages/Dashboard';
 import 'antd/dist/antd.css';
+import ConfirmEmail from './pages/ConfirmEmail';
+import Signin from './pages/Signin';
+import Signup1 from './pages/Register/Signup1';
+import Signup2 from './pages/Register/Signup2';
 
 ReactDOM.render(
   <React.StrictMode>
    <Router>
-    <Route path="/" component={Login}/>
+    <Route exact path="/" component={Login}/>
+    <Route exact path="/login" component={Signin}/>
+    <Route exact path="/confirmemail" component={ConfirmEmail}/>
+    <Route exact path="/signup1" component={Signup1}/>
+    <Route exact path="/signup2" component={Signup2}/>
     <Route path="/home" component={Dashboard}/>
   </Router>
   </React.StrictMode>,

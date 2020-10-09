@@ -14,8 +14,18 @@
     font-weight: bold;
     font-size: 33px;
     line-height: 40px;
-    width: 274px;
     display: flex;
+}
+.footerText{
+    font-size: 13px;
+    justify-content: space-between;
+    display: flex;
+}
+.remindme{
+    color: #183247;
+}
+.forgot{
+    color: #239CFF;
 }
 .subText{
     height: 32px;
@@ -43,8 +53,9 @@ margin: 40px 0 0 0;
     cursor: pointer;
 
 }
-.input{
-    width: 365px !important;
+.rightData{
+    min-width: 208px;
+    padding-left: 21px;
 }
 .label{
     

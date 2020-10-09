@@ -9,9 +9,9 @@ export default class PreloginHeader extends React.Component {
             SA-INTRANET
         </span>
         <div className={styles.rightContent}>
-            <span style={{color:'#3BC163'}}>
+            {!this.props.isLogin  && <span onClick={()=>this.props.history.push('/login')}style={{color:'#3BC163'}}>
                 Login
-            </span>
+            </span>}
             <span style={{display:'flex',alignItems:'center'}}>
                 <img src={emailIcon} style={{paddingRight: '10px'}}/>
                 <span style={{color:'#A1A6A9;'}}>support@squashapps.com</span>

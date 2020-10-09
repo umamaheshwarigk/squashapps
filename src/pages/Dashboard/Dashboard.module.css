@@ -1,0 +1,26 @@
+.headtext{
+    font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 27px;
+margin-left: 40px;
+color: #3BC163;
+
+}
+.contentContainer{
+    background:#EBEEF0;
+    height: 100%;
+}
+.header{
+    background: #fff;
+    height: 50px;
+    font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 20px;
+display: flex;
+color: #183247;
+padding: 15px;
+}

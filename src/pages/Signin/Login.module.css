@@ -17,6 +17,17 @@
     width: 274px;
     display: flex;
 }
+.footerText{
+    font-size: 13px;
+    justify-content: space-between;
+    display: flex;
+}
+.remindme{
+    color: #183247;
+}
+.forgot{
+    color: #239CFF;
+}
 .subText{
     height: 32px;
 font-family: Open Sans;
@@ -42,9 +53,6 @@ margin: 40px 0 0 0;
     justify-content: center;
     cursor: pointer;
 
-}
-.input{
-    width: 365px !important;
 }
 .label{
     
