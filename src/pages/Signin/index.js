@@ -4,7 +4,6 @@ import loginSideImage from '../../assets/dropout.png'
 import PreloginHeader from '../../components/PreloginHeader';
 import { Input, Checkbox } from 'antd';
 import './styles.css'
-import Axios from 'axios';
 export default class Signin extends React.Component {
   constructor(props){
     super(props);
