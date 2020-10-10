@@ -14,16 +14,17 @@ export default class Signin extends React.Component {
     }
   }
   login=a=>{
-    window.location.pathname = '/home'
+    // window.location.pathname = '/home'
 
-    Axios.post('http://localhost:3002/login',{username: this.state.email, password: this.state.password}).then(e=>{
-      console.log(e)
-      var response = e.data
-      localStorage.setItem('access-token',response.accessToken)
-      window.location.pathname = '/home'
-    }).catch(f=>{
-     alert(f)
-    })
+    // Axios.post('http://localhost:3002/login',{username: this.state.email, password: this.state.password}).then(e=>{
+    //   console.log(e)
+    //   var response = e.data
+    //   localStorage.setItem('access-token',response.accessToken)
+    //   window.location.pathname = '/home'
+    // }).catch(f=>{
+    //  alert(f)
+    // })
+    this.props.history.push('/home')
   }
   render(){
   return(

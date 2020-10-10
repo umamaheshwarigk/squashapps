@@ -20,7 +20,7 @@ ReactDOM.render(
     <Route exact path="/confirmemail" component={ConfirmEmail}/>
     <Route exact path="/signup1" component={Signup1}/>
     <Route exact path="/signup2" component={Signup2}/>
-  <Route path="/home" component={Dashboard}/>
+  <Route exact path="/home" component={Dashboard}/>
     <Redirect path="*" to="/"/>
 {/*   
   </Router>:
