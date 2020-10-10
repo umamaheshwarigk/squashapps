@@ -7,7 +7,6 @@ import {
   MenuFoldOutlined,
 } from '@ant-design/icons';
 import { Input } from 'antd';
-import { AudioOutlined } from '@ant-design/icons';
 import closeIcon from '../../assets/close.svg'
 const { Search } = Input;
 

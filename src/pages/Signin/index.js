@@ -14,6 +14,8 @@ export default class Signin extends React.Component {
     }
   }
   login=a=>{
+    window.location.pathname = '/home'
+
     Axios.post('http://localhost:3002/login',{username: this.state.email, password: this.state.password}).then(e=>{
       console.log(e)
       var response = e.data
