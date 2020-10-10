@@ -13,20 +13,20 @@ import Signup2 from './pages/Register/Signup2';
 
 ReactDOM.render(
   <React.StrictMode>
-   {!localStorage.length?<Router>
+   {/* {!localStorage.length? */}
+   <Router>
     <Route exact path="/" component={Login}/>
     <Route exact path="/login" component={Signin}/>
     <Route exact path="/confirmemail" component={ConfirmEmail}/>
     <Route exact path="/signup1" component={Signup1}/>
     <Route exact path="/signup2" component={Signup2}/>
   <Route path="/home" component={Dashboard}/>
-
     <Redirect path="*" to="/"/>
-  
+{/*   
   </Router>:
   <Router>
   <Route path="/home" component={Dashboard}/>
-  <Redirect path="*" to="/home"/>
+  <Redirect path="*" to="/home"/> */}
 
   </Router>
   }
