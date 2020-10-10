@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './style.module.css';
 import loginSideImage from '../../../assets/dropout.png'
 import PreloginHeader from '../../../components/PreloginHeader';
-import { Input, Checkbox } from 'antd';
+import { Input } from 'antd';
 // import './styles.css'
 export default class Signup1 extends React.Component {
   render(){
@@ -10,7 +10,7 @@ export default class Signup1 extends React.Component {
     <div>
         <PreloginHeader isLogin={true} history={this.props.history}/>
         <div className={styles.loginWrapper}>
- <img src={loginSideImage}/>
+ <img src={loginSideImage} alt=""/>
 <div className={styles.rightWrapper}>
     <span className={styles.headText}>Setup Your Application</span>
     <span className={styles.subText}>To make a workspace from scratch, please confirm your email address</span>

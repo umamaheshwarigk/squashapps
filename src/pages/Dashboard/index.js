@@ -11,14 +11,7 @@ import { AudioOutlined } from '@ant-design/icons';
 import closeIcon from '../../assets/close.svg'
 const { Search } = Input;
 
-const suffix = (
-  <AudioOutlined
-    style={{
-      fontSize: 16,
-      color: '#1890ff',
-    }}
-  />
-);
+
 export default class Dashboard extends React.Component {
   constructor(props){
 super(props)
@@ -73,7 +66,7 @@ super(props)
           </div>
           {this.state.sideMenu && <div className={styles.backWrapper}>
             <div className={styles.rightWrapper}>
-<img src={closeIcon} className={styles.closeIcon} onClick={()=>this.setState({sideMenu:false})}/>
+<img src={closeIcon} className={styles.closeIcon} onClick={()=>this.setState({sideMenu:false})} alt=""/>
             </div>
             </div>}
   </div>

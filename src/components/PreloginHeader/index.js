@@ -13,7 +13,7 @@ export default class PreloginHeader extends React.Component {
                 Login
             </span>}
             <span style={{display:'flex',alignItems:'center'}}>
-                <img src={emailIcon} style={{paddingRight: '10px'}}/>
+                <img src={emailIcon} style={{paddingRight: '10px'}} alt=""/>
                 <span style={{color:'#A1A6A9;'}}>support@squashapps.com</span>
             </span>
         </div>

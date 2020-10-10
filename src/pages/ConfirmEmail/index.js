@@ -9,7 +9,7 @@ export default class ConfirmEmail extends React.Component {
     <div>
         <PreloginHeader history={this.props.history}/>
         <div className={styles.loginWrapper}>
- <img src={loginSideImage}/>
+ <img src={loginSideImage} alt=""/>
 <div className={styles.rightWrapper}>
     <span className={styles.headText}>We’ve sent you a mail!</span>
     <span className={styles.subText}>To make a workspace from scratch, please confirm your email address.</span>
