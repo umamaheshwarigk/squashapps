@@ -12,7 +12,7 @@ export default class Login extends React.Component {
  <img src={loginSideImage}/>
 <div className={styles.rightWrapper}>
     <span className={styles.headText}>Make Your Life Easy with Intranet</span>
-    <span className={styles.subText}>To mae a workspace from scratch, please confirm your email address</span>
+    <span className={styles.subText}>To make a workspace from scratch, please confirm your email address</span>
     <span className={styles.label}>Email address</span>
 <Input className={styles.input} placeholder="name@email.com"/>
 <span onClick={()=>this.props.history.replace('/confirmemail')} className={styles.button}>Confirm Email</span>

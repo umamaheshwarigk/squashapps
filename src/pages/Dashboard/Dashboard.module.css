@@ -24,3 +24,46 @@ display: flex;
 color: #183247;
 padding: 15px;
 }
+.addAnnouncement{
+    width: 163px;
+    height: 28px;
+ background: #3BC163;
+ border-radius: 2px;
+ font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 18px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 12px;
+color: #FFFFFF;
+cursor: pointer;
+}
+.content{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.backWrapper{
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: #0000004f;
+}
+.rightWrapper{
+    position: absolute;
+    width: 500px;
+    height: 100%;
+    background: #fff;
+    right: 0;
+}
+.closeIcon{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}

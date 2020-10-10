@@ -29,7 +29,7 @@ export default class Signup2 extends React.Component {
 <span className={styles.label}>Password</span>
 <Input.Password visibilityToggle={false} placeholder="Enter your password"/>
 
-<span onClick={()=>this.props.history.replace('/confirmemail')} className={styles.button}>Complete</span>
+<span onClick={()=>this.props.history.replace('/login')} className={styles.button}>Complete</span>
 </div>
         </div>
   </div>

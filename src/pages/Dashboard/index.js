@@ -8,7 +8,7 @@ import {
 } from '@ant-design/icons';
 import { Input } from 'antd';
 import { AudioOutlined } from '@ant-design/icons';
-
+import closeIcon from '../../assets/close.svg'
 const { Search } = Input;
 
 const suffix = (
@@ -24,6 +24,7 @@ export default class Dashboard extends React.Component {
 super(props)
     this.state={
         collapsed: false,
+        sideMenu: false
     }
   }
   toggleCollapsed = () => {
@@ -31,6 +32,9 @@ super(props)
       collapsed: !this.state.collapsed,
     });
   };
+  showSideMenu=()=>{
+    this.setState({sideMenu: !this.state.sideMenu})
+  }
   render(){
   return(
     <div style={{height:'100%'}}>
@@ -48,19 +52,30 @@ super(props)
           <Menu.Item key="1" >
             Announcement
           </Menu.Item>
-          <Menu.Item key="2" >
-            Log out
+          <Menu.Item key="2" onClick={()=>{
+             localStorage.clear();
+           window.location.pathname="/"
+           }}>
+             Log out
+             
           </Menu.Item>
           </Menu>
           </div>
           <div className={styles.contentContainer}>
             <span className={styles.header}>Announcement</span>
+            <div className={styles.content}>
             <Search
       placeholder="input search text"
       onSearch={value => console.log(value)}
       style={{ width: 200 }}
-    />
+    /><span className={styles.addAnnouncement} onClick={()=>this.showSideMenu()}>+ Add Announcement</span>
           </div>
+          </div>
+          {this.state.sideMenu && <div className={styles.backWrapper}>
+            <div className={styles.rightWrapper}>
+<img src={closeIcon} className={styles.closeIcon} onClick={()=>this.setState({sideMenu:false})}/>
+            </div>
+            </div>}
   </div>
   )}
 }

@@ -20,7 +20,7 @@ export default class ConfirmEmail extends React.Component {
 <Input className={styles.otpInput}/>
 <Input className={styles.otpInput}/>
 <Input className={styles.otpInput}/>
-<span className={styles.button}>Submit</span>
+<span className={styles.button} onClick={()=>this.props.history.replace('/signup1')}>Submit</span>
 </div>
         </div>
   </div>
